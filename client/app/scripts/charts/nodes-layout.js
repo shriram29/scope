@@ -213,6 +213,8 @@ function runLayoutEngine(graph, imNodes, imEdges, opts) {
     }
   });
 
+  console.log("============================");
+  console.log(graph);
   dagre.layout(graph, { debugTiming: false });
 
   // apply coordinates to nodes and edges
